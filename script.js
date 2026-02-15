@@ -21,7 +21,7 @@ function moveNoButton() {
   noBtn.style.left = x + "px";
   noBtn.style.top = y + "px";
 
-  if (noClickCount >= 5) {
+  if (noClickCount >= 10) {
     questionBox.classList.add("hidden");
     finalYesBox.classList.remove("hidden");
   }
@@ -51,7 +51,7 @@ bigYesBtn.addEventListener("click", () => {
   });
 });
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 10; i++) {
   setTimeout(() => {
     confetti({
       particleCount: 100,
